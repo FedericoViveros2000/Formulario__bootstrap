@@ -1,0 +1,104 @@
+/* Para las fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;600;700;800&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #16191c;
+  font-weight: 300;
+  color: #fff;
+}
+
+.logo {
+  height: 5vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-dark-x {
+  background-color: #1e2126;
+  color: #fff;
+}
+
+.bg-dark-x:focus {
+  background-color: #444546ab;
+}
+
+.bg-dark-x-background {
+  background-color: #2e2e2eab;
+}
+
+/* 
+    TODO Estilos de los botones 
+*/
+.input__file {
+  border: none;
+  position: relative;
+  display: inline-block;
+  padding: 15px 0;
+}
+
+.input__file::before {
+  background-color: #2e2e2e;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  position: absolute;
+  left: -10px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 2px solid #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input__file input[type="file"] {
+  opacity: 0;
+  display: inline-block;
+}
+
+.input1::before {
+  content: 'Fotos del dispositivo';
+  text-align: center;
+}
+
+.input2::before {
+  content: 'Fotos del comprobante';
+  text-align: center;
+}
+
+.form-control, .btn {
+  min-height: 3.125rem;
+  line-height: initial;
+}
+
+.input__textarea {
+  background-color: #16191c;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.imagenes {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=styles.css.map */

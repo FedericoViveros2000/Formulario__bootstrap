@@ -14,29 +14,135 @@
 
     <link rel="stylesheet" href="./css/styles.css">
 
+    <!-- PARA NORMALIZAR LOS ESTILOS -->
+
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- ICONOS DE FONTAWESOME -->
+
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
 </head>
 <body>
   
     <section>
 
-        <div class="row">
+        <div class="row g-0">
 
-            <div class="col-lg-7">
-
+          <!-- CARROUSEL DE IMAGENES -->
+            <div class="col-lg-7 d-none d-lg-block">
+              <div id="carouselExampleCaptions" class="carousel slide  " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner vh-100">
+                  <div class="carousel-item active h-100">
+                    <img src="./img/image1.jpg" class="d-block w-100 imagenes" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4 class="fw-bold">La más potente del mercado</h4>
+                      <a href="#" class="text-light text-decoration-none fw-bold">Visita nuestra tienda</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./img/image2.jpg" class="d-block w-100 imagenes" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4 class="fw-bold">Descubre la nueva generación</h4>
+                      <a href="#" class="text-light text-decoration-none fw-bold">Visita nuestra tienda</a>                    
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./img/image3.jpg" class="d-block w-100 imagenes" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fw-bold">Descubre nuestros equipos de escritorio.</h5>
+                      <a href="#" class="text-light text-decoration-none fw-bold">Visita nuestra tienda</a>         
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
 
             <!-- FORMULARIO -->
-            <div class="col-lg-5 bg-danger">
+            <div class="col-lg-5 d-flex flex-column align-items-end min-vh-100">
 
-                <div >
+                <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100  mb-auto">
 
                     <!-- IMAGEN DEL LOGO -->
 
-                    <img src="./img/logo.svg" alt="Logo de DELL" >
+                    <img src="./img/logo.png" alt="Logo de DELL" class="img-fluid logo">
 
                 </div>
 
+                <!-- Para el contenido del formulario -->
+                <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
+
+                    <h1 class="fw-bold">Soporte DELL</h1>
+
+                    <form class="mb-5">
+                        <div class="mb-4">
+
+                          <label for="exampleInputEmail1" class="form-label">Correo electrónico:</label>
+
+                          <input type="email" class="form-control bg-dark-x text-light border-0" placeholder="Ingrese su email" id="email" aria-describedby="emailHelp">
+
+                          <p id="alerta-vacio" class="form-text fs-5 text-danger d-none fw-normal"><i class="fas fa-exclamation-circle me-2"></i>Introduzca un correo</p>
+
+                          <p id="alerta-invalido" class="form-text fs-5 text-danger d-none fw-normal"><i class="fas fa-exclamation-circle me-2"></i>Introduzca un correo válido</p>
+
+
+                        </div>
+                        
+                        <div class="mb-4">
+
+                          <label for="pass" class="form-label">Contraseña</label>
+
+                          <input type="password" placeholder="Ingrese su contraseña" class="form-control bg-dark-x border-0 mb-2 text-light" id="pass">
+
+                          <p id="alerta-pass" class="form-text fs-5 text-danger d-none fw-normal"><i class="fas fa-exclamation-circle me-2"></i>Introduzca una contraseña</p>
+
+
+                          <a href="#" class="form-text text-muted text-decoration-none">Has olvidado tu contraseña?</a>
+
+                        </div>
+
+                        
+                        <button type="submit" class="btn btn-primary w-100" id="submit">Siguiente</button>
+
+                      </form>
+
+                      <p class="fw-bold text-center text-muted">O inicia sesion con</p>
+
+                      <!-- Botones para iniciar sesion -->
+
+                      <div class="d-flex justify-content-around">
+
+                        <button type="submit" class="btn btn-outline-light flex-grow-1 me-3" id="submit"><i class="fab fa-google me-2"></i>Google</button>
+                        
+                        <button type="submit" class="btn btn-outline-light flex-grow-1 me-3" id="submit"><i class="fab fa-facebook-f lead me-2"></i>Facebook</button>
+
+
+                      </div>
+
+                </div>
+
+                <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 w-100 mt-auto">
+    
+                  <p class="d-inline-block mb-0">Todavia no tienes una cuenta?</p><a href="#" class="fw-bold text-light text-decoration-none"> Crea una ahora</a>
+    
+                </div>
             </div>
+
 
         </div>
 
@@ -49,7 +155,15 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     
     <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.esm.min.js"></script>
-    <script src="./js/bootstrap.js.map"></script>
+
+    <!-- Para los iconos -->
+
+    <script src="./js/all.min.js"></script>
+
+    <!-- JS principal -->
+
+    <script src="./js/main.js"></script>
+
+
 </body>
 </html>

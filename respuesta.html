@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELL Ayuda</title>
+
+    <!-- BOOTSTRAP FRAMEWORK -->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- PARA MI HOJA DE ESTILOS -->
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- PARA NORMALIZAR LOS ESTILOS -->
+
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- ICONOS DE FONTAWESOME -->
+
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+</head>
+<body>
+  
+    <section>
+
+        <div class="row g-0 d-flex justify-content-center align-items-center min-vh-100">
+
+           
+            <!-- FORMULARIO -->
+            <div class="col-lg-6 ">
+
+                <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-2">
+
+                    <!-- IMAGEN DEL LOGO -->
+
+                    <img src="./img/logo.png" alt="Logo de DELL" class="img-fluid logo">
+
+                </div>
+
+                <!-- Para el contenido del formulario -->
+                <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center bg-dark-x-background rounded-3">
+
+                    <h1 class="fw-bold text-center">Soporte DELL</h1>
+
+                    <form class="row g-3">
+                        <div class="col-md-6 mt-4">
+                          <label for="inputEmail4" class="form-label fw-bold fs-5">Nombres:</label>
+                          <input type="text" class="form-control bg-dark-x border-0 text-light fs-5" id="inputEmail4" placeholder="Introduzca su nombre:">
+                        </div>
+                        <div class="col-md-6 mt-4">
+                          <label for="inputPassword4" class="form-label fw-bold fs-5">Apellidos:</label>
+                          <input type="text" class="form-control bg-dark-x border-0 text-light fs-5" id="inputPassword4" placeholder="Introduzca su apellido:">
+                        </div>
+                        
+                        <div class="col-md-6 mt-4">
+                          <label for="inputCity" class="form-label fw-bold fs-5">Pais:</label>
+                          <input type="text" class="form-control bg-dark-x border-0 text-light fs-5" id="inputCity" placeholder="Introduzca su pais">
+                        </div>
+                        <div class="col-md-6 mt-4">
+                          <label for="inputState" class="form-label fw-bold fs-5">Ciudad:</label>
+                          <select id="inputState" class="form-select bg-dark-x border-0 form-control text-light fs-5">
+                            <option selected class="bg-dark-x fw-bold fs-5">Asunción</option>
+                            <option></option>
+                          </select>
+                        </div>
+
+                        <div class="d-flex justify-content-around align-items-center mt-4 mb-2">
+
+                          <div class="col-4 mb-3 me-3 input__file input1">
+                             
+                              <input class="form-control bg-dark-x border-0 text-light file1" type="file" id="formFileMultiple" >
+                          </div>
+
+                          <div class="col-4 mb-3 input__file input2">
+                              
+                              <input class="form-control bg-dark-x border-0 text-light file2" type="file" id="formFileMultiple">
+                          </div>
+                            
+
+                        </div>
+                        
+
+                          <div class="form-floating">
+                            <textarea class="form-control input__textarea fs-5" placeholder="Deje sus comentarios aqui" id="floatingTextarea2" style="height: 20vh"></textarea>
+                            <label for="floatingTextarea2" class=" fs-5 fw-normal ms-3">Comentarios:</label>
+                          </div>
+
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary w-100 fs-4">Enviar</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+
+            
+           
+
+        </div>
+
+    </section>
+
+    <!-- JS DE BOOTSTRAP -->
+
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+    <script src="./js/popper.min.js"></script>
+
+    <!-- Para los iconos -->
+
+    <script src="./js/all.min.js"></script>
+
+    <!-- JS principal -->
+
+    <script src="./js/main.js"></script>
+
+
+</body>
+</html>
