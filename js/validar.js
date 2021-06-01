@@ -36,7 +36,7 @@ export default function validarFormulario(name, lastName, country) {
             }
         }
     }else{
-        location.href = 'https://www.youtube.com/watch?v=ZBaClgP7i_c&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=88';
+        location.href = 'https://www.youtube.com/watch?v=QuxQnR4uTG4';
     }
 
 
