@@ -1,9 +1,9 @@
 import validarFormulario from "./validar.js";
 
 const $btnSubmit = document.getElementById('btn__enviar');
-const $name = document.getElementById('name');
-const $lastName = document.getElementById('lastName');
-const $country = document.getElementById('country');
+const $name = document.getElementById('name').value;
+const $lastName = document.getElementById('lastName').value;
+const $country = document.getElementById('country').value;
 
 /* 
     TODO Alertas de validaciones

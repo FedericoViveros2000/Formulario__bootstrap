@@ -10,30 +10,44 @@ export default function validarFormulario(name, lastName, country) {
     /*
         TODO Para Validar el NOMBRE
     */
-   
+        const expReg = /^\s+$/;
+
+        let esValido;
+
+    esValido = expReg.test(name);
+
 
     if (name.value === '') {
 
         $alertName.classList.remove('d-none');
 
 
-    }else if (!typeof name === 'string') {
+    }else if (esValido == false) {
 
         $alertNameInvalid.classList.remove('d-none');
         
-    }else if (lastName.value === '') {
+    }
+    
+    esValido = expReg.test(lastName);
+
+    if (lastName.value === '') {
 
         $alertLastName.classList.remove('d-none');
 
-    }else if (!typeof lastName.value === 'string') {
+    }else if (esValido == false) {
 
         $alertLastNameInvalid.classList.remove('d-none');
 
-    }else if (country.value === '') {
+    }
+    
+    esValido = expReg.test(country);
+
+    
+    if (country.value === '') {
 
         $alertCountry.classList.remove('d-none');
 
-    } else if (!typeof country === 'string') {
+    } else if (esValido == false) {
 
         $alertCountryInvalid.classList.remove('d-none');
 
