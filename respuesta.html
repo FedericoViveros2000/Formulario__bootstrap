@@ -50,23 +50,83 @@
 
                     <form class="row g-3">
                         <div class="col-md-6 mt-4">
-                          <label for="inputEmail4" class="form-label fw-bold fs-5">Nombres:</label>
-                          <input type="text" class="form-control bg-dark-x border-0 text-light fs-5" id="inputEmail4" placeholder="Introduzca su nombre:">
+                          <label for="name" class="form-label fw-bold fs-5">Nombres:</label>
+                          <input type="text" class="form-control bg-dark-x border-0 text-light fs-5" id="name" placeholder="Introduzca su nombre:">
+
+                          <p id="alerta-nombre" class="form-text fs-5 text-danger d-none fw-normal mt-3"><i class="fas fa-exclamation-circle me-2"></i>Introduzca su nombre</p>
+                          <p id="alerta-nombre2" class="form-text fs-5 text-danger d-none fw-normal mt-3"><i class="fas fa-exclamation-circle me-2"></i>Introduzca un nombre válido (El nombre no debe contener números).</p>
+
+
                         </div>
                         <div class="col-md-6 mt-4">
-                          <label for="inputPassword4" class="form-label fw-bold fs-5">Apellidos:</label>
-                          <input type="text" class="form-control bg-dark-x border-0 text-light fs-5" id="inputPassword4" placeholder="Introduzca su apellido:">
+                          <label for="lastName" class="form-label fw-bold fs-5">Apellidos:</label>
+                          <input type="text" class="form-control bg-dark-x border-0 text-light fs-5 mt-0" id="lastName" placeholder="Introduzca su apellido:">
+
+                          <p id="alerta-apellido" class="form-text fs-5 text-danger d-none fw-normal mt-3"><i class="fas fa-exclamation-circle me-2"></i>Introduzca su apellido</p>
+                          <p id="alerta-apellido2" class="form-text fs-5 text-danger d-none fw-normal mt-3"><i class="fas fa-exclamation-circle me-2"></i>Introduzca un apellido válido (El apellido no debe contener números).</p>
+
+
                         </div>
                         
                         <div class="col-md-6 mt-4">
-                          <label for="inputCity" class="form-label fw-bold fs-5">Pais:</label>
-                          <input type="text" class="form-control bg-dark-x border-0 text-light fs-5" id="inputCity" placeholder="Introduzca su pais">
+                          <label for="country" class="form-label fw-bold fs-5">Pais:</label>
+                          <input type="text" class="form-control bg-dark-x border-0 text-light fs-5" id="country" placeholder="Introduzca su pais">
+
+                          <p id="alerta-pais" class="form-text fs-5 text-danger d-none fw-normal mt-3"><i class="fas fa-exclamation-circle me-2"></i>Introduzca su país</p>
+
+                          <p id="alerta-pais2" class="form-text fs-5 text-danger d-none fw-normal mt-3"><i class="fas fa-exclamation-circle me-2"></i>Introduzca un país válido (El país no debe contener números).</p>
+
+
                         </div>
                         <div class="col-md-6 mt-4">
                           <label for="inputState" class="form-label fw-bold fs-5">Ciudad:</label>
                           <select id="inputState" class="form-select bg-dark-x border-0 form-control text-light fs-5">
                             <option selected class="bg-dark-x fw-bold fs-5">Asunción</option>
-                            <option></option>
+                            <option>Ciudad del Este</option>
+                            <option>Luque</option>
+                            <option>San Lorenzo</option>
+                            <option>Fernando de la Mora</option>
+                            <option>Encarnacion</option>
+                            <option>Lambaré</option>
+                            <option>Caacupé</option>
+                            <option>Areguá</option>
+                            <option>Villarrica</option>
+                            <option>Villa Elisa</option>
+                            <option>Coronel Oviedo</option>
+                            <option>Limpio</option>
+                            <option>Capiatá</option>
+                            <option>Ñemby</option>
+                            <option>Mariano Roque Alonso</option>
+                            <option>Itaguá</option>
+                            <option>Salto del Guairá</option>
+                            <option>Fuerte Olimpo</option>
+                            <option>Ypacaraí</option>
+                            <option>San Bernardino</option>
+                            <option>San Juan Bautista</option>
+                            <option>Ayolas</option>
+                            <option>Itá</option>
+                            <option>Pilar</option>
+                            <option>Pedro Juan Caballero</option>
+                            <option>San Antonio</option>
+                            <option>Filadelfia</option>
+                            <option>Ybycuí</option>
+                            <option>Gran Asunción</option>
+                            <option>San Pedro de Ycuamandiyú</option>
+                            <option>Hohenau</option>
+                            <option>Villa Hayes</option>
+                            <option>Guarambaré</option>
+                            <option>Hernandarias</option>
+                            <option>Ypané</option>
+                            <option>Presidente Franco</option>
+                            <option>Yaguarón</option>
+                            <option>Piribebuy</option>
+                            <option>Tobatí</option>
+                            <option>Minga Guazú</option>
+                            <option>Coronel Bogado</option>
+                            <option>San Estanislao</option>
+                            <option>Emboscada</option>
+                            <option>Isla Umbú</option>
+                            <option>Paso Yobái</option>
                           </select>
                         </div>
 
@@ -87,13 +147,18 @@
                         
 
                           <div class="form-floating">
-                            <textarea class="form-control input__textarea fs-5" placeholder="Deje sus comentarios aqui" id="floatingTextarea2" style="height: 20vh"></textarea>
-                            <label for="floatingTextarea2" class=" fs-5 fw-normal ms-3">Comentarios:</label>
+                            <textarea class="form-control input__textarea bg-dark-x fs-5 pt-5 px-4" placeholder="Deje sus comentarios aqui" id="coments" style="height: 20vh"></textarea>
+                            <label for="coments" class=" fs-5 fw-normal ms-3">Comentarios:</label>
                           </div>
 
-                        <div class="col-12">
-                          <button type="submit" class="btn btn-primary w-100 fs-4">Enviar</button>
+                        <div class="col-6">
+                          <button type="submit" id="btn__enviar" class="btn btn-primary w-100 fs-4">Enviar</button>
                         </div>
+
+                        <div class="col-6">
+                          <button type="submit"id="btn__cancelar" class="btn btn-danger w-100 fs-4">Cancelar</button>
+                        </div>
+
                       </form>
                 </div>
             </div>
@@ -105,6 +170,7 @@
 
     </section>
 
+    <script src="./js/respuesta.js" type="module"></script>
     <!-- JS DE BOOTSTRAP -->
 
     <script src="./js/bootstrap.min.js"></script>
@@ -119,7 +185,6 @@
 
     <!-- JS principal -->
 
-    <script src="./js/main.js"></script>
 
 
 </body>
