@@ -1,4 +1,4 @@
-import  {validarCorreo} from "./validacion.js";
+import  validarCorreo from "./validacion.js";
 
 document.addEventListener('DOMContentLoaded', e =>{
 
