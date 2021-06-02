@@ -18,28 +18,37 @@ export default function validarFormulario(name, lastName, country) {
     if (esValido == false) {
 
         $alertNameInvalid.classList.remove('d-none');
-        
+
         esValido = expReg.test(lastName);
-    
+
         if (esValido == false) {
-    
+
             $alertLastNameInvalid.classList.remove('d-none');
-    
+
             esValido = expReg.test(country);
-        
-        
+
+
             if (esValido == false) {
-        
+
                 $alertCountryInvalid.classList.remove('d-none');
-        
-        
+
+
             }
         }
-    }else{
-        location.href = 'https://www.youtube.com/watch?v=QuxQnR4uTG4';
+    } else {
+
+        let myModal = document.getElementById('btn__enviar')
+
+        
+        myModal.addEventListener('click', function () {
+
+
+            myModal.setAttribute('data-bs-target', '#modal-show');
+
+            
+        })
+        
     }
-
-
 
 
 

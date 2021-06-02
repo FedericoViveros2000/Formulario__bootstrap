@@ -102,4 +102,9 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+/* Para mostrar la ventana modal */
+.modal.fade.show {
+  display: block !important;
+}
 /*# sourceMappingURL=styles.css.map */
