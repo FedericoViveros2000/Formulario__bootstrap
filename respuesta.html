@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -29,7 +29,7 @@
 
 <body>
 
-    <!-- Modal -->
+    <!-- Para la ventana modal -->
     <div class="modal fade" id="modal-show" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -42,7 +42,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> <a href="./index.html" class="text-decoration-none text-light fw-normal">Cerrar</a> </button>
-            <button type="button" class="btn btn-primary fw-normal">Guardar</button>
+            <button type="button" class="btn btn-primary fw-normal"> <a href="./index.html" class="text-light text-decoration-none">Guardar</a></button>
           </div>
         </div>
       </div>
@@ -57,9 +57,9 @@
       <!-- FORMULARIO -->
       <div class="col-lg-6 ">
 
+        <!-- LOGO de DELL-->
         <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-2">
 
-          <!-- IMAGEN DEL LOGO -->
 
           <img src="./img/logo.png" alt="Logo de DELL" class="img-fluid logo">
 
@@ -82,8 +82,8 @@
                   class="fas fa-exclamation-circle me-2"></i>Introduzca un nombre válido (El nombre no debe contener
                 números).</p>
 
-
             </div>
+
             <div class="col-md-6 mt-4">
               <label for="lastName" class="form-label fw-bold fs-5">Apellidos:</label>
               <input type="text" class="form-control bg-dark-x border-0 text-light fs-5 mt-0" id="lastName"
@@ -192,21 +192,20 @@
             </div>
 
             <div class="col-6">
-              <button type="submit" id="btn__cancelar" class="btn btn-danger w-100 fs-4">Cancelar</button>
+              <button type="submit" id="btn__cancelar" class="btn btn-danger w-100 fs-4"> <a href="./index.html" class="text-light text-decoration-none">Cancelar</a></button>
             </div>
 
           </form>
         </div>
       </div>
 
-
-
-
     </div>
 
   </section>
-
+  
+  <!-- JS principal -->
   <script src="./js/respuesta.js" type="module"></script>
+
   <!-- JS DE BOOTSTRAP -->
 
   <script src="./js/bootstrap.min.js"></script>
@@ -218,10 +217,6 @@
   <!-- Para los iconos -->
 
   <script src="./js/all.min.js"></script>
-
-  <!-- JS principal -->
-
-
 
 </body>
 

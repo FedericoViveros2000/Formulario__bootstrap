@@ -1,22 +1,21 @@
 import validarFormulario from "./validar.js";
 
+/* 
+    TODO Variables de los botones, inputs y alertas
+*/
+
 const $btnSubmit = document.getElementById('btn__enviar');
 const $name = document.getElementById('name');
 const $lastName = document.getElementById('lastName');
 const $country = document.getElementById('country');
-
 const $alertName = document.getElementById('alerta-nombre');
-
 const $alertLastName = document.getElementById('alerta-apellido');
-
 const $alertCountry = document.getElementById('alerta-pais');
 
 
 /* 
     TODO Alertas de validaciones
 */
-
-
 
 $btnSubmit.addEventListener('click', e => {
 
